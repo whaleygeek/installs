@@ -1,0 +1,14 @@
+#! /bin/bash
+# Get and unzip the piduino module for Raspberry Pi
+
+ZIPFILE=piduino-R161.zip
+DESTDIR=../projects/piduino
+
+rm $DESTDIR/$ZIPFILE
+wget http://blog.whaleygeek.co.uk/wp-content/uploads/2014/08/$ZIPFILE -P $DESTDIR
+pushd $DESTDIR
+unzip -o $ZIPFILE
+popd
+
+
+
