@@ -1,0 +1,14 @@
+#! /bin/bash
+# Get and unzip the SL030 RFID module for Raspberry Pi
+
+ZIPFILE=rfid_SL030.zip
+DESTDIR=../projects/RFID
+
+rm $DESTDIR/$ZIPFILE
+wget http://blog.whaleygeek.co.uk/wp-content/uploads/2014/08/$ZIPFILE -P $DESTDIR
+pushd $DESTDIR
+unzip -o $ZIPFILE
+popd
+
+
+
