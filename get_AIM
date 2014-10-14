@@ -1,0 +1,19 @@
+#! /bin/bash
+# Get the files required for Adventures in Minecraft
+
+pushd ~
+mkdir MyAdventures
+cd MyAdventures
+
+rm -rf /tmp/mcpi
+git clone https://github.com/martinohanlon/mcpi /tmp/mcpi
+cp -r /tmp/mcpi/mcpi mcpi
+
+rm -rf /tmp/anyio
+git clone https://github.com/whaleygeek/anyio /tmp/anyio
+cp -r /tmp/anyio/anyio anyio
+
+popd
+
+
+
