@@ -1,0 +1,11 @@
+#! /bin/bash
+# Get and unzip the peek_a_boo camera demo for Raspberry Pi
+
+ZIPFILE=peek-a-boo-camera-R47.zip
+DESTDIR=../projects/peekaboo
+
+rm $DESTDIR/$ZIPFILE
+wget http://blog.whaleygeek.co.uk/wp-content/uploads/2014/08/$ZIPFILE -P $DESTDIR
+pushd $DESTDIR
+unzip -o $ZIPFILE
+popd
